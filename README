@@ -1,0 +1,19 @@
+fpuz
+====
+15 (and probably 8) puzzle solver and generator.
+
+
+Run
+---
+there is some examples in main.c.
+run
+  git clone https://github.com/retpoison/fpuz.git
+  cd fpuz/
+  make
+  ./fpuz
+
+
+Some info
+---------
+the empty cell is represented by the number of board/table size. (16 for 15 puzzle and 9 for 8 puzzle)
+fp_solve will return a fp_Answer structure as a result. the cells_move field indicates in every step which cell should be moved. The empty_move field is the direction of the empty cell movement.
