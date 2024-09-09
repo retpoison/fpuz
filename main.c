@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "answer.h"
-#include "generator.h"
-#include "solver.h"
-#include "utils.h"
+#include "fpuz.h"
 
 int
 main()

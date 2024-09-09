@@ -1,8 +1,6 @@
 #include <stdlib.h>
 
-#include "answer.h"
-#include "solver.h"
-#include "utils.h"
+#include "fpuz.h"
 
 struct fp_Answer *
 fp_new_answer()

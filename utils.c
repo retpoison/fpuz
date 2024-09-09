@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "utils.h"
+
+#include "fpuz.h"
 
 int
 fp_abs(int n)

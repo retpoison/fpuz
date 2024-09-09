@@ -1,9 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "answer.h"
-#include "solver.h"
-#include "utils.h"
+#include "fpuz.h"
 
 static struct fp_Answer *ans = NULL;
 

@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "generator.h"
-#include "utils.h"
+#include "fpuz.h"
 
 int FP_SIZE;
 
