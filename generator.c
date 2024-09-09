@@ -15,9 +15,10 @@ fp_generate(int size, int a[size][size])
 			a[i][j] = i * FP_SIZE + j + 1;
 
 	srand((rand() % 10) * time(NULL));
-	fp_shuffle(a);
-	while (!fp_check_solvable(a)) {
+	while (1) {
 		fp_shuffle(a);
+		if (fp_is_solvable(a))
+			break;
 	}
 }
 

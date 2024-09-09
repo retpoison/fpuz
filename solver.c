@@ -9,7 +9,7 @@ struct fp_Answer *
 fp_solve(int size, int p[size][size])
 {
 	FP_SIZE = size;
-	if (!fp_check_solvable(p)) {
+	if (!fp_is_solvable(p)) {
 		printf("can't solve this puzzle.\n");
 		return NULL;
 	}

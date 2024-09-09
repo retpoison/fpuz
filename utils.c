@@ -39,7 +39,7 @@ fp_print(int size, int a[size][size])
 }
 
 int
-fp_check_solvable(int a[FP_SIZE][FP_SIZE])
+fp_is_solvable(int a[FP_SIZE][FP_SIZE])
 {
 	int i1, j1, i2, j2, inversions = 0, epos = 0;
 	for (i1 = 0; i1 < FP_SIZE; i1++) {
