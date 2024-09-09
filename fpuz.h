@@ -32,6 +32,7 @@ void fp_swap_cell(struct fp_Cell *a, struct fp_Cell *b);
 void fp_swap_pos(struct fp_Pos *a, struct fp_Pos *b);
 void fp_print(int size, int a[size][size]);
 int fp_is_solvable(int a[FP_SIZE][FP_SIZE]);
+int fp_get_inversions(int a[]);
 
 /* generator */
 
