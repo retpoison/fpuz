@@ -48,10 +48,11 @@ fp_print(int a[FP_SIZE][FP_SIZE])
 int
 fp_is_solvable(int a[FP_SIZE][FP_SIZE])
 {
-	int i, j, inversions = fp_get_inversions((int *)a), epos = 0;
+	int i, j, inversions = fp_get_inversions((int *)a), epos = 0,
+	    s = FP_SIZE * FP_SIZE;
 	for (i = 0; i < FP_SIZE; i++) {
 		for (j = 0; j < FP_SIZE; j++) {
-			if (a[i][j] == FP_SIZE * FP_SIZE) {
+			if (a[i][j] == s) {
 				epos = FP_SIZE - i;
 				break;
 			}
@@ -68,12 +69,10 @@ fp_is_solvable(int a[FP_SIZE][FP_SIZE])
 int
 fp_get_inversions(int a[])
 {
-	int i, j, inversions = 0;
+	int i, j, inversions = 0, s = FP_SIZE * FP_SIZE;
 	for (i = 0; i < FP_SIZE * FP_SIZE - 1; i++) {
 		for (j = i + 1; j < FP_SIZE * FP_SIZE; j++) {
-			if (a[i] == FP_SIZE * FP_SIZE)
-				continue;
-			if (a[j] && a[i] && a[i] > a[j])
+			if (a[j] != s && a[i] != s && a[i] > a[j])
 				inversions++;
 		}
 	}
