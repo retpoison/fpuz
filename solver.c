@@ -6,9 +6,8 @@
 static struct fp_Answer *ans = NULL;
 
 struct fp_Answer *
-fp_solve(int size, int p[size][size])
+fp_solve(int p[FP_SIZE][FP_SIZE])
 {
-	FP_SIZE = size;
 	if (!fp_is_solvable(p)) {
 		printf("can't solve this puzzle.\n");
 		return NULL;

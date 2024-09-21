@@ -3,6 +3,14 @@
 
 #include "fpuz.h"
 
+int FP_SIZE;
+
+void
+fp_set_size(int s)
+{
+	FP_SIZE = s;
+}
+
 int
 fp_abs(int n)
 {
@@ -26,9 +34,8 @@ fp_swap_pos(struct fp_Pos *a, struct fp_Pos *b)
 }
 
 void
-fp_print(int size, int a[size][size])
+fp_print(int a[FP_SIZE][FP_SIZE])
 {
-	FP_SIZE = size;
 	int i, j;
 	for (i = 0; i < FP_SIZE; i++) {
 		for (j = 0; j < FP_SIZE; j++) {
